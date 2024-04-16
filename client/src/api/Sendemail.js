@@ -1,6 +1,6 @@
 import { postreq } from "./utils";
 export const sendEmail = async(email) => {
-    const endpoint = `http://localhost:5600/verify/${email}`;
+    const endpoint = `https://aeonaxy-server-l3xw.onrender.com/${email}`;
     try {
         const result = await postreq(endpoint); 
         return result;

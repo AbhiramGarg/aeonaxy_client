@@ -1,11 +1,11 @@
 import { v2 as cloudinary } from 'cloudinary';
-
 export const getprofileURL = async (profile) => {
+
     try {
         cloudinary.config({ 
-            cloud_name: 'dwkbeuihp', 
-            api_key: '573166473543391', 
-            api_secret: 'CjUnzYCKIpIyStBXJr2rY7Yd3oE' 
+            cloud_name: process.env.CLOUD_NAME, 
+            api_key: process.env.API_KEY, 
+            api_secret: process.env.API_SECRET
         });
 
         if (!profile) {

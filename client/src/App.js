@@ -4,10 +4,10 @@ import Signup from './pages/Signup';
 import Complete_profile from './pages/Complete_profile';
 import Describe_page from './pages/Describe_page';
 import Home from './pages/Home';
-
 export const AppContext = createContext(null);
 
 function App() {
+
   const [userInfo, setUserinfo] = useState({
     userID: '',
     userPrf: '',

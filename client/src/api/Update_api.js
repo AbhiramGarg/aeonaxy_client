@@ -1,6 +1,6 @@
 import {  putreq } from "./utils"
 export const updatedprofile = async (id, profile, location) => {
-    const endpoint = `http://localhost:5600/update/${id}`;
+    const endpoint = `https://aeonaxy-server-l3xw.onrender.com/update/${id}`;
     try {
         const result = await putreq(endpoint, { profile, location });
         console.log(result)
